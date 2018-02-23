@@ -1,0 +1,127 @@
+.nav {
+  background-color: $nav-color;
+}
+.nav__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.nav__list {
+  @include list-style-reset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav__item {
+  margin-right: 60px;
+
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  display: block;
+  white-space: nowrap;
+  color: #ffffff;
+  font-family: $font-regular;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+
+}
+.nav__btn {
+  padding: 13px 20px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.nav__cart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  margin-left: 30px;
+  color: #ffffff;
+}
+.cart__icon {
+  width: 30px;
+  height: 25px;
+  background-image: url(../img/basket.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+}
+
+.cart__numb {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  font-size: 12px;
+  font-family: $font-bold;
+}
+
+.nav__toggle {
+    display: none;
+  }
+
+.nav__toggle {
+  position: absolute;
+  padding: 0;
+  top: -47px;
+  right: 30px;
+  width: 20px;
+  height: 14px;
+  font-size: 0;
+  border: none;
+  box-shadow: 0 2px 0 0 #000000 inset, 0 6px 0 0 #ffffff inset, 0 8px 0 0 #000000 inset, 0 12px 0 0 #ffffff inset, 0 14px 0 0 #000000 inset;
+  cursor: pointer;
+
+  &--opened {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &--opened::after,
+  &--opened::before, {
+    @include pseudo-element(20px, 2px, 7px, 0);
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &--opened::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+
+ }

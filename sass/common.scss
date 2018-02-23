@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-regular;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+// br {
+//   display: none;
+//  }
+
+form {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+svg {
+  overflow: hidden;
+}
+
+.page-wrapper {
+  transition: all .3s;
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    min-width: 1150px;
+  }
+}

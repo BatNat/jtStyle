@@ -1,0 +1,65 @@
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border: 2px solid #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 24px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+  &__slider {
+    display: inline-block;
+    padding: 17px 50px;
+    width: 170px;
+    background-color: #ff5757;
+    color: #fff;
+    border: none;
+  }
+
+  &__demo {
+    padding: 15px 0;
+    min-width: 170px;
+    background-color: #ff5757;
+    font-family: $font-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    align-self: center;
+    margin-bottom: 19px;
+  }
+
+  &__submit {
+    width: 170px;
+    background-color: #ff5757;
+    padding: 15px 0;
+    color: #ffffff;
+    font-family: $font-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    align-self: center;
+    margin-bottom: 100px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+
+
+}
