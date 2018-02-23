@@ -7,7 +7,6 @@
 *.sublime*
 preview/
 node_modules/
-phpmailer/
 build/
 npm-debug.*
 Thumbs.db
