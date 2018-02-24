@@ -42,6 +42,10 @@ svg {
   overflow: hidden;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 .page-wrapper {
   transition: all .3s;
 }
