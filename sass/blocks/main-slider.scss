@@ -62,3 +62,77 @@ letter-spacing: 0.9px;
 .slider__img--mobile {
   display: none;
 }
+
+.bx-wrapper {
+  .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #7dabd1;
+  }
+
+    .bx-default-pager a {
+      background: #7dabd1;
+      text-indent: -9999px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-right: 12px;
+      outline: 0;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        background: #ffffff;
+      }
+
+      &.active {
+        background: #ffffff;
+      }
+
+      &:focus {
+        background: #ffffff;
+      }
+
+    }
+
+  .bx-pager-item {
+    display: inline-block;
+    vertical-align: bottom;
+    *zoom: 1;
+    *display: inline;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .bx-controls-direction a {
+    position: absolute;
+    top: 89%;
+    margin-top: -16px;
+    outline: 0;
+    width: 10px;
+    height: 17px;
+    text-indent: -9999px;
+    z-index: 9999;
+  }
+
+  .bx-prev {
+    left: 17%;
+    background-image: url('../img/arrow-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bx-next {
+    right: 17%;
+    background: url('../img/arrow-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+}
