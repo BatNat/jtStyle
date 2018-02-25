@@ -1,4 +1,10 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -26,9 +32,25 @@ img {
   max-width: 100%;
 }
 
-// br {
-//   display: none;
-//  }
+svg,
+section {
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    min-width: 1150px;
+  }
+}
+
 
 form {
   margin: 0;
@@ -48,6 +70,17 @@ select::-ms-expand {
 
 .page-wrapper {
   transition: all .3s;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 @media (min-width: 768px) {

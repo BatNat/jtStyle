@@ -149,3 +149,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  .product__tag {
+    flex: 1 1 auto;
+  }
+}

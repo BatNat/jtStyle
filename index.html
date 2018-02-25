@@ -44,23 +44,19 @@
   </head>
 
   <body>
-  <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
   <div class="page-wrapper">
     <header class="page-header">
       <div class="page-header__content">
-        <div class="page-header__menu nav">
-          <button class="nav__toggle nav__toggle--opened" type="button">Открыть меню</button>
-          <ul class="nav__list nav__list--opened">
-            <li class="page-header__item nav__item">
-              <a href="#">Каталог товаров</a>
-            </li>
-            <li class="page-header__item nav__item">
-              <a href="#">Вязание на заказ</a>
-            </li>
-          </ul>
-        </div>
+        <div class="primary-nav-wrapper">
+          <nav>
+            <ul class="primary-nav">
+              <li><a href="#intro">The collective</a></li>
+              <li><a href="#team">The crew</a></li>
+              <li><a href="#articles">Articles</a></li>
+              <li><a href="#freebies">Freebies</a></li>
+            </ul>
+          </nav>
+          </div>
         <a href="#" class="page-header__logo">
           <img class="logo__img" src="img/logo.png" width="60" height="60" alt="JetStyle">
         </a>
@@ -323,18 +319,12 @@
     </section>
   </div> <!-- .page-wrapper -->
 
-    <script src="js/main.js"></script>
+
     <script src="js/picturefill.js"></script>
     <!-- jQuery library (served from Google) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
     <script src="js/libs/js/jquery.bxslider.js"></script>
-
-    <script>
-      $(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
